@@ -5,7 +5,7 @@ function hello(){
 
 function tagplay(){
     var msg = document.getElementsByTagName("p");
-    document.write(msg.length);s
+    document.write(msg.length);
 }
 
 function changePcolor(){
@@ -14,5 +14,10 @@ function changePcolor(){
         msg[i].style.background = "white";
         msg[i].style.color = "black";
     }
+}
+function classplay(){
+    var msg = document.getElementsByClassName("test");
+    console.log(msg.length);
+    msg[0].style.fontWeight = "bold";
 }
 //document.getElementById("btn").onclick = hello;
