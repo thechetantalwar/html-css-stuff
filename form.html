@@ -1,0 +1,48 @@
+<form action="" >
+<fieldset>
+	<legend>Profession</legend>
+<input type="radio" id="professionB" name="Profession" value="Business"></input>
+<label for="professionB" >Business </label>
+<input type="radio" id="professionS" name="Profession" value="Salaried"></input>
+<label for="professionS" >Salaried </label>
+</fieldset>
+<label for="city" >Datalist selected City </label>
+<input type="text" id="city" list="cities">
+<datalist id="cities">
+	<option value="Chandigarh">
+	<option value="Delhi">
+	<option value="Hyderabad">
+	<option value="Shimla">
+	<option value="Chennai">
+</datalist>
+<br>
+<label for="select-city" >Dropdown based City Selection</label>
+<select id="select-city">
+<option value="Chandigarh">
+	<option value="Delhi">Delhi</option>
+	<option value="Hyderabad">Hyderabad</option>
+	<option value="Shimla">Shimla</option>
+	<option value="Chennai">Chennai</option>
+</select>
+<br>
+<select id="select-city2">
+	<optgroup label="UTs">
+		<option value="Chandigarh">Chandigarh</option>
+		<option value="Delhi">Delhi</option>
+	</optgroup>
+	<optgroup label="Telengana">
+		<option value="Hyderabad">Hyderabad</option>
+	</optgroup>
+	<optgroup label="Himachal Pradesh">
+		<option value="Shimla">Shimla</option>
+	</optgroup>
+	<optgroup label="Tamil Nadu">
+		<option value="Chennai">Chennai</option>
+		<option value="Ooty">Ooty</option>
+	</optgroup>
+</select>
+<br>
+<button type="submit" value="submit">
+Submit
+</button>
+</form>

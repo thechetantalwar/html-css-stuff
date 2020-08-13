@@ -1,0 +1,39 @@
+
+.border{
+    width: 150px;
+    height: 150px;
+    background: #ffb522;
+    color: rgba(4, 19, 70, 1);
+    border: 2px solid #f08080;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 5px 20px 10px #f08080;
+    position: relative;
+    /*Chrome, Safari, Opera*/
+    -webkit-animation-name: moveit;
+    -webkit-animation-duration: 4s;
+    /*standard*/
+    animation-name: moveit;
+    animation-duration: 4s;
+}
+@-webkit-keyframes moveit{
+    from{ left: 0;}
+    to{left: 50%;}
+}
+@keyframes moveit{
+    from{ left: 0;}
+    to{left: 50%;}
+}
+h1{
+    color:rgba(4,19,70,1); 
+    text-shadow: 5px 5px 10px #0940F5;
+}
+button{
+    background: #fd7c2a;
+    transition-property: background;
+    transition-duration: 2s;
+}
+button:hover{
+    background: rgba(4,19,70,1);
+}
