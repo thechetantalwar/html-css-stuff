@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Objects JavaScript</title>
+    </head>
+    <body>
+        <script>   
+            var employee = {
+                "name": "Adesh",
+                "city": "Chennai",
+                "profile": "Developer"
+            };
+            document.write(employee.name+"<br>");
+            document.write("Lives in "+employee.city+" Working as "+employee["profile"]);
+            employee.name = "Chetan";
+            employee.city = "Pune";
+            for(var i in employee){
+                document.write("<br>"+employee[i]+"");
+            }
+            console.log(employee);
+        </script>
+    </body>
+</html>

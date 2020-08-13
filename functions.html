@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Functions JavaScript</title>
+    </head>
+    <body>
+        <button onclick="greet(43,55);">Greetings</button>
+        <script>
+        
+            //msg = 23;
+            //document.write(msg);
+            function greet(num1,num2){
+                result = calc(num1,num2);
+                alert("Total is "+result[2]);
+                //console.log(result);
+            }
+            
+            function calc(num1 =21, num2= 23){
+                var total = num1+num2;
+                var arr = [num1,num2,total];
+                return arr;
+            }
+
+        </script>
+    </body>
+</html>

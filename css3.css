@@ -12,10 +12,12 @@
     position: relative;
     /*Chrome, Safari, Opera*/
     -webkit-animation-name: moveit;
+    -webkit-animation-fill-mode: forwards;
     -webkit-animation-duration: 4s;
     /*standard*/
     animation-name: moveit;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 @-webkit-keyframes moveit{
     from{ left: 0;}
