@@ -1,25 +1,28 @@
-function validateForm(){
-    var name = document.user.firstname.value;
-    var email = document.user.email.value;
-
-    if(name == ""){
-        alert("Name Field Requrired");
-        //document.getElementById("nameError").innerHTML = "Name Field Requrired";
-
-    }
-    else if(email == ""){
-        alert("Email Field Requrired")
-        //document.getElementById("emailError").innerHTML = "Email Field Requrired";
+function validateForm(){  
+    var name=document.user.name.value;  
+    var email=document.user.email.value; 
+    var phone =document.user.number.value; 
+    var status=false;  
+      
+    if(name.length < 3){  
+        document.getElementById("nameErr").innerHTML=  "Length of name should be greater than 6";  
+        status=false;  
     }
     else{
-        alert("Name is "+name+ " and email is "+ email);
-        console.log();
-        console.log("All went well");
+        status=true;
     }
-}
-function onclick()
-{
-    var name = document.user.name.value;
-    var email = document.user.email.value;
-    console.log("Name is "+name+ " and email is "+ email);
-}
+
+    if(email == ""){  
+        document.getElementById("emailErr").innerHTML=  "Enter Email";  
+        status=false;  
+    }
+    else{
+        status=true;
+    }
+    var regex = /^[0-9]\d{9}$/;
+    if(regex.test(phone)==false){
+        document.getElementById("numberErr").innerHTML=  "Number is not valid";  
+        status=false;  
+    }
+    return status;  
+    }  
