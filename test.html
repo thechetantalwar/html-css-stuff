@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Accordion</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .bs-example{
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <div class="accordion" id="accordionE">
+        <div class="card">
+            
+            <div class="card-header" id="headingOne"> 
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">1. JAVA</button>									
+            </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionE">
+            <div class="card-body">
+                <p>Design patterns, Solid Prinicples and Microservices <a href="#" target="_blank">Learn more.</a></p>
+            </div>
+        </div>
+
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">2. UI</button>
+                
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionE">
+                <div class="card-body">
+                    <p>UI Concepts, HTML, CSS, JavaScript, Bootsrap <a href="#" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+</body>
+</html>                            
